@@ -15,7 +15,7 @@
             background-color: blue;;
         }
         body {
-            min-height: 100vh;
+            /* min-height: 100vh; */
             background-color: aqua;
             border: 1px solid black;
         }
@@ -38,12 +38,21 @@
             font-size: 1rem;
             bottom: 0px;
         }
+
+        .layout {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
     </style>
 </head>
 <body>
     <main>
-        <div class="top">Something at the top.</div>
-        <div class="bottom">Something at the button.</div>
+    <div class="layout">
+        <p>Lorem ipsum dolor sit amet...</p>
+        <button>Sign Up</button>
+    </div>
     </main>
 </body>
 </html>
